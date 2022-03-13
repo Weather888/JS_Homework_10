@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница, к которой подключен jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  
+  <body>
+    <button type="button" id="hide">Спрятать четные элементы</button>
+    <button type="button" id="show">Показать четные элементы</button>
+  
+    <table>
+      <tr>
+        <td>нечетные</td>
+        <td>нечетные</td>
+        <td>нечетные</td>
+        <td>нечетные</td>
+        <td>нечетные</td>
+      </tr>
+      <tr>
+        <td>четные</td>
+        <td>четные</td>
+        <td>четные</td>
+        <td>четные</td>
+        <td>четные</td>
+      </tr>
+      <tr>
+        <td>нечетные</td>
+        <td>нечетные</td>
+        <td>нечетные</td>
+        <td>нечетные</td>
+        <td>нечетные</td>
+      </tr>
+      <tr>
+        <td>четные</td>
+        <td>четные</td>
+        <td>четные</td>
+        <td>четные</td>
+        <td>четные</td>
+      </tr>
+      <tr>
+        <td>нечетные</td>
+        <td>нечетные</td>
+        <td>нечетные</td>
+        <td>нечетные</td>
+        <td>нечетные</td>
+      </tr>
+      <tr>
+        <td>четные</td>
+        <td>четные</td>
+        <td>четные</td>
+        <td>четные</td>
+        <td>четные</td>
+      </tr>
+    </table>
+  
+    <script>
+      $("#hide").click(hide_click);
+      $("#show").click(show_click);
+
+      function hide_click(event) {
+        $("tr:odd").hide(); 
+      }
+      function show_click(event) {
+        $("tr:odd").show(); 
+      }
+    </script>
+
+  </body>
+  </html>
+  
